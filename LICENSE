@@ -1,6 +1,9 @@
 The MIT License (MIT)
 
-Copyright (c) 2014 rhavill
+This program was inspired by http://blog.thesparktree.com/post/77311774912/creating-a-sails-application-using-passport, 
+which was inspired by https://gist.github.com/theangryangel/5060446.
+
+Copyright (c) 2014 Ricardo Havill
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
