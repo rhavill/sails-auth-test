@@ -35,6 +35,10 @@ module.exports.routes = {
   '/': {
     view: 'home/index'
   },
+  'get /test/private':{
+      controller: 'test',
+      action: 'privatePage'
+  },
   'get /user/login':{
       controller: 'user',
       action: 'login'
