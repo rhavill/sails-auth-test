@@ -20,6 +20,10 @@ module.exports = {
 	privatePage: function(req, res) {
 		res.send("You can view the private page.");
 	},  
+    
+	test: function(req, res) {
+		res.send("Test.");
+	},  
 
 
   /**
