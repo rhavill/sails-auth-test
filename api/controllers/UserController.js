@@ -39,9 +39,7 @@ module.exports = {
                     res.redirect('/user/login');
                     return;
                 }
-
-                res.redirect('/');
-                return;
+                res.send({id:user.id, email:user.email});
             });
         })(req, res);
     },
