@@ -28,18 +28,16 @@ module.exports = {
         {
             if ((err) || (!user))
             {
-                res.redirect('/user/login');
-                return;
+                res.send({success:false});
             }
 
             req.logIn(user, function(err)
             {
                 if (err)
                 {
-                    res.redirect('/user/login');
-                    return;
+                    res.send({success:false});
                 }
-                res.send({id:user.id, email:user.email});
+                res.send({id:user.id, email:user.email, success:true});
             });
         })(req, res);
     },
