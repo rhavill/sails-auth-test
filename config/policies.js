@@ -20,7 +20,8 @@ module.exports.policies = {
 	//'*': 'isAuthenticated',
 	'*': 'isAuthenticated',
 	'user': {
-	    '*': true
+	    '*': false,
+	    'login' : true
 	}
 
   /*
