@@ -21,8 +21,9 @@ module.exports.policies = {
 	'*': 'isAuthenticated',
 	'user': {
 	    '*': false,
-	    'login' : true,
-	    'logout': true
+	    login: true,
+	    logout: true,
+	    passport_local: true
 	}
 
   /*
