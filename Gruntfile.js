@@ -58,6 +58,11 @@ module.exports = function (grunt) {
 
     // *->    put other dependencies here   <-*
     'linker/js/vendor/angular/angular.js',
+    'linker/js/vendor/angular-bootstrap/ui-bootstrap.js',
+    'linker/js/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
+    'linker/js/vendor/angular-ui-router/release/angular-ui-router.js',
+    'linker/js/vendor/angular-ui/common/module.js',
+    'linker/js/vendor/angular-ui/modules/directives/route/route.js',
     // All of the rest of your app scripts imported here
     'linker/js/custom/**/*.js'
   ];
