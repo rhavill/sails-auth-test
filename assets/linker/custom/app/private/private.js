@@ -10,7 +10,7 @@ angular.module('ngStarterKit.private', [
         views: {
           "main": {
             controller: 'PrivateCtrl',
-            templateUrl: 'private/private.tpl.html'
+            templateUrl: 'linker/custom/app/private/private.tpl.html'
           }
         },
         data: { pageTitle: 'Private' }

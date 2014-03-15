@@ -1,3 +1,4 @@
+console.log('linker home.js');
 /**
  * Each section of the site has its own module. It probably also has
  * submodules, though this boilerplate is too simple to demonstrate it. Within
@@ -27,7 +28,7 @@ angular.module('ngStarterKit.home', [
         views: {
           "main": {
             controller: 'HomeCtrl',
-            templateUrl: 'home/home.tpl.html'
+            templateUrl: 'linker/custom/app/home/home.tpl.html'
           }
         },
         data: { pageTitle: 'Home' }

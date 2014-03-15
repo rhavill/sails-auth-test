@@ -28,7 +28,7 @@ angular.module('ngStarterKit.login', [
         views: {
           "main": {
             controller: 'LoginFormController',
-            templateUrl: 'login/login.tpl.html'
+            templateUrl: 'linker/custom/app/login/login.tpl.html'
           }
         },
         data: { pageTitle: 'Login' }
