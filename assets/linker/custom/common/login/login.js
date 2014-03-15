@@ -12,7 +12,7 @@ angular.module('login', [
         },
         login: function (username, password) {
           service.user = null;
-          var request = $http.post('/login', {username: username, password: password});
+          var request = $http.post('/user/login', {email: username, password: password});
           return request.then(function (response) {
             if (response.data.id) {
               service.user = response.data;
@@ -20,7 +20,7 @@ angular.module('login', [
           });
         },
         logout: function () {
-          var request = $http.get('/logout');
+          var request = $http.get('/user/logout');
           return request.then(function (response) {
             if (response.data.success) {
               service.user = null;
