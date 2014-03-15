@@ -28,7 +28,7 @@ angular.module('ngStarterKit.home', [
         views: {
           "main": {
             controller: 'HomeCtrl',
-            templateUrl: 'linker/custom/app/home/home.tpl.html'
+            templateUrl: '/linker/custom/app/home/home.tpl.html'
           }
         },
         data: { pageTitle: 'Home' }
