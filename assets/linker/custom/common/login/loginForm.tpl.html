@@ -1,17 +1,21 @@
-<form class="form-horizontal" ng-controller="LoginFormController">
+<form class="form-horizontal" ng-controller="LoginFormController" name="loginForm" ng-submit="login(user)">
     <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
     <div class="control-group">
-        <label class="control-label" for="inputUsername">Username</label>
-
+        <label class="control-label" for="vla">test</label>
         <div class="controls">
-            <input name="username" ng-model="user.username" type="text" id="inputUsername" placeholder="Username">
+            <input value="{{user.email}} {{user.password}}" name="vla"  type="text" id="afemail" placeholder="blah">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="inputPassword">Password</label>
-
+        <label class="control-label" for="email">Email</label>
         <div class="controls">
-            <input name="password" ng-model="user.password" type="password" id="inputPassword" placeholder="Password">
+            <input name="email" ng-model="user.email" type="text" id="email" placeholder="Email">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="password">Password</label>
+        <div class="controls">
+            <input name="password" ng-model="user.password" type="password" id="password" placeholder="Password">
         </div>
     </div>
     <div class="control-group">
@@ -19,7 +23,7 @@
             <!--label class="checkbox">
                 <input type="checkbox"> Remember me
             </label-->
-            <button id="login-button" ng-click="login()" class="btn">Sign in</button>
+            <button id="login-button" type="submit" class="btn">Sign in</button>
         </div>
     </div>
 </form>
